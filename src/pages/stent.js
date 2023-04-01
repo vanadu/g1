@@ -1,7 +1,11 @@
 import React from 'react'
+import Layout from '../components/Layout'
+import "../scss/styles.scss"
 
 export default function stent() {
   return (
-    <div>LarParLife Stent</div>
+    <Layout>
+      <div>LarParLife Stent</div>
+    </Layout>
   )
 }

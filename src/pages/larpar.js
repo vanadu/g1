@@ -1,7 +1,11 @@
 import React from 'react'
+import Layout from '../components/Layout'
+import "../scss/styles.scss"
 
 export default function Larpar() {
   return (
-    <div>LarParLife Larpar</div>
+  <Layout>
+    <div>LarParLife LarPar</div>
+  </Layout>
   )
 }
