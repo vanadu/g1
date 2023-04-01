@@ -1,0 +1,310 @@
+// !VA Probably not needed
+nav {
+  width: 100%;
+  height: 100%;
+}
+
+// NAVBAR - this is the parent of the mobile menu. It needs a width, which is modified in the media queries as appropriate for device. Display is block, changed to flex im MQ to set desktop menu position relative to .navbar container. The height of .navbar determines the vertical position of the desktop menu.
+// !VA height of .navbar should conform to the dimensions of the menu-icon
+// !VA desktop: hight of navbar determines vertical position of menu
+.navbar {
+  @include mphone {
+    width: 240px;
+    height: 76px;
+  }
+  @include lphone {
+    width: 280px;
+    height: 76px;
+    padding: .5rem .5rem 0 0;
+  }
+  @include tablet {
+    width: 550px;
+    height: 50px;
+    margin-right: 1rem;
+  }
+  @include desktop {
+    width: 550px;
+    height: 50px;
+    margin-right: 1rem;
+  }
+  @include ldesktop {
+    width: 700px;
+    height: 50px;
+    margin: .5rem 1.5rem 0 0;
+  }
+  background-color: var(--primary_bg_color);
+}
+
+// !VA MOBILE MENU
+// !VA Set display: block here, and display: none on +tablet. If this element is displayed 
+.navbar_mobile--icons {
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+  @include ldesktop {
+    display: none;
+  }
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: .25rem 0;
+  background-color: var(--primary_bg_color);
+}
+
+.navbar_mobile--icons-icon {
+  // width: 7 0px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 .5rem;
+  h5 { 
+    @include mphone {
+      padding-bottom: .375rem;
+      font-size: .813rem;
+    }
+    @include lphone {
+      padding-bottom: .375rem;
+      font-size: .875rem;
+    }
+    margin: 0;
+    padding-bottom: .25rem;
+    color: #FCB900;
+    font-family: var(--secondary_font);
+    font-size: .813rem;
+  }
+  span {
+    @include mphone {
+      font-size: 2.313rem;
+      line-height: 2.313rem;
+    }
+    @include lphone {
+      font-size: 2.75rem;
+      line-height: 2.75rem;
+    }
+    @include tablet {
+      display: none;
+      visibility: hidden;
+    }
+    @include desktop {
+      display: none;
+      visibility: hidden;
+    }
+    @include ldesktop {
+      display: none;
+      visibility: hidden;
+    }
+    color: #8DD1FF;
+    font-size: 2rem;
+  }
+}
+
+.navbar_mobile--menu-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  // padding: 2rem;
+}
+
+.navbar_mobile--menu {
+  width: 100vw;
+  height: 100vh;
+  background: var(--secondary_color);
+}
+
+.navbar_mobile--menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 5rem 0;
+
+}
+
+.navbar_mobile--menu-list-item {
+  display: flex; 
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-top: 1px solid #959595;
+  // border-bottom: 1px solid #959595;
+  background: var(--primary_bg_color);
+  a {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    height: 100%;
+    color: var(--primary_color);
+    &.you {
+      color: var(--marquee_color);
+      font-weight: 600;
+    }
+  }
+}
+
+.blob {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+// !VA DESKTOP MENU ============================
+
+.navbar_desktop--menu {
+  @include tablet {
+    display: flex;
+    width: 550px;
+  }
+  @include desktop {
+    display: flex;
+  }
+  @include ldesktop {
+    display: flex;
+  }
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 1rem;
+}
+
+// !VA Icon menu
+.navbar_desktop--menu-icons {
+  @include tablet {
+    display: flex;
+    width: 45%;
+    svg {
+      font-size: 1.613rem;
+    }
+  }
+  @include desktop {
+    display: flex;
+    width: 50%;
+    margin: .5rem 0 .638rem;
+    svg {
+      font-size: 1.675rem;
+    }
+  }
+  @include ldesktop {
+    display: flex;
+    width: 50%;
+    margin: .5rem 0 .638rem;
+    svg {
+      font-size: 1.675rem;
+    }
+  }
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: .5rem 0 .638rem;
+  svg {
+    color: var(--secondary_color);
+    // font-size: 1.938rem;
+  }
+}
+
+// !VA Hidden on mobile devices, so set all +tablet properties here and mod as necessary in MQs 
+// !VA Vertical position of menu dependent on height of .nav.
+.navbar_desktop--menu-list {
+  @include tablet {
+    display: flex;
+    visibility: visible;
+  }
+  @include desktop {
+    display: flex;
+    visibility: visible;
+    li {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+  @include ldesktop {
+    display: flex;
+    margin-top: .75rem;
+    visibility: visible;
+    li {
+      font-size: 1.75rem;
+      line-height: 2.125rem;
+    }
+  }
+  display: none;
+  // !VA Position menu at bottom of nav element
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  // !VA height = height of .nav
+  height: 46px;
+  visibility: hidden;
+  li {
+    font-family: var(--secondary_font);
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+  a {
+    color: var(--primary_link_color);
+    font-weight: 400;
+    &:hover {
+      color: var(--primary_hover_color) !important;
+    } 
+    &.home-icon {
+      font-size: 2rem;
+    }
+    &.semibold-red {
+      color: var(--marquee_color) !important;
+    }
+  }
+}
+
+.navbar_desktop--menu-list-item  {
+  &:hover {
+    &:after {
+      transition: opacity .25s; 
+      border-bottom: 8px solid var(--primary_icon_color);
+      opacity: 1;
+    }
+  }
+  a {
+    &:hover {
+      color: #333;
+    }
+  }
+  a.menu-link-dvms {
+    background: rgba(0, 0, 255, .3) !important; //devblue
+  }
+  .menu-link-separator {
+    color: var(--secondary_color);
+  }
+  /* opacity: 1;
+  transition: opacity .25s; 
+  border-bottom: 8px solid var(--primary_icon_color); */
+}
+
+.nav-modal-donate .modal-square-icon {
+  margin: 0;
+  .modal-square-icon-bg {
+    border: none;
+    width: auto;
+    height: auto;
+    background: transparent;
+    p {
+      display: none;
+    }
+    svg {
+      width: 2.25rem;
+      height: 2.25rem;
+      color: var(--secondary_color);
+    }
+  }
+}
+
+
+
+
+
+

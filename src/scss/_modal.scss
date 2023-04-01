@@ -1,0 +1,84 @@
+
+.ReactModalPortal {
+  background: rgba(255, 0, 0, .3) !important; //devred
+}
+
+
+
+.my-modal {
+    position: absolute; 
+    top: 500px;
+    // inset: 50% auto auto 50%; 
+    border: 1px solid rgb(204, 204, 204); 
+    background: #FFFACE none repeat scroll 0% 0%; 
+    overflow: auto; 
+    border-radius: 4px; 
+    outline: currentcolor none medium; 
+    padding: 0px; 
+    .close {
+      position: absolute;
+      top: 3px;
+      right: 8px;
+      svg  {
+        font-size: 2rem;
+      }
+    }
+}
+
+.my-modal-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.test-but {
+  height: 40px;
+  padding: 0 2rem;
+  color: white;
+  background: red;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.blob {
+  margin-top: 2rem;
+}
+
+.test-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.test-modal-div {
+  background: var(--primary_bg_color);
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 2rem;
+  color: gray;
+
+}
+
+.test-modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  // margin-top: -12px;
+  font-weight: bold;
+  background: transparent;
+  color: var(--primary_bg_color);
+  color: white;
+  width: 3rem;
+  height: 3rem;
+}

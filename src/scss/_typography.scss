@@ -1,0 +1,119 @@
+
+a {
+  &.link-primary, &.menu-link {
+    color: var(--primary_link_color);
+    font-weight: 600;
+    &:hover {
+      color: var(--secondary_link_color);
+    }
+  }
+  &.link-secondary {
+    color: var(--secondary_link_color);
+    // color: #17669b;
+    font-weight: 600;
+    &:hover {
+      color: var(--secondary_color);
+    }
+  }
+  &.link-green {
+    font-weight: 500;
+    color: #85AE27;
+    &:hover {
+      color: #959595 !important;
+    }
+  }
+  &.link-blue {
+    font-weight: 500;
+    color: #043089;
+    &:hover {
+      color: #959595 !important;
+    }
+  }
+}
+
+// !VA Standard link colors, that is, link=primary and hover=secondary
+
+.primary-color {
+  color: var(--primary_color);
+}
+
+.semibold-red {
+  color: var(--marquee_color);
+  font-weight: 500;
+}
+
+.emphasis {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.stronger, .semibold {
+  font-weight: 600;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bg-size-about {
+  background-size: 100%;
+}
+
+.sub {
+  vertical-align: -4px;
+}
+
+.super {
+  vertical-align: super;
+}
+
+.share {
+  display: block; 
+  color: var(--marquee_color);
+  font-family: var(--secondary_font);
+  font-size: 2rem;
+  line-height: 3rem;
+  padding-bottom: 1rem;
+  @include mphone {
+  
+  }
+  @include lphone {
+  
+  }
+  @include tablet {
+    font-size: 4rem;
+    line-height: 10rem;
+  }
+  @include desktop {
+    font-size: 4rem;
+    line-height: 10rem;
+  }
+  @include ldesktop {
+    font-size: 4rem;
+    line-height: 10rem;
+  }
+}
+
+.link-temp {
+  color: var(--tooltip_color);
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+
+.tooltip {
+  color: var(--tooltip_color);
+  text-decoration: underline;
+  cursor: pointer;
+  text-decoration-style: dotted;
+}
+
+.tooltip-light {
+  color: var(--primary_color);
+  text-decoration: underline;
+  cursor: pointer;
+  text-decoration-style: dotted;
+}
+
+
+
+

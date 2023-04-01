@@ -1,5 +1,8 @@
 import * as React from "react"
+import "../scss/styles.scss"
 
 export default function Home() {
-  return <div>Hello world!</div>
+  return (
+    <div>LarParLife Home</div>
+  )
 }

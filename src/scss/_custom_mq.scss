@@ -1,0 +1,2020 @@
+// !VA _custom_mq.scss
+
+// !VA Utility Classes
+.mobile-hide-block {
+  @include tablet {
+    display: block;
+  }
+}
+
+.rule-underline {
+  @include tablet {
+    margin: .313rem auto 1rem;
+  } 
+  @include desktop {
+    margin: .313rem auto 1rem;
+  }
+  @include ldesktop {
+    // margin: .25rem auto 1rem;
+  }
+}
+
+.two-column-content {
+  @include mphone {
+    // padding: 0 1rem;
+    figure {
+      display: block;
+      margin: .5rem auto .75rem;
+      padding: 0;
+      // float: right;
+      figcaption {
+        font-size: 1rem;
+      }
+      hr {
+        display: none;
+      }
+    }
+  }
+  @include lphone {
+    // padding: 0 1.25rem;
+    figure {
+      display: block;
+      margin: .5rem auto .75rem;
+      // width: 80%;
+      max-width: 360px;
+      // !VA NOW
+      // padding: 0 1rem;
+      // float: right;
+      figcaption {
+        font-size: 1rem;
+      }
+      hr {
+        display: none;
+      }
+
+    }
+  }
+  @include tablet {
+    display: block;
+    figure {
+      display: block;
+      width: 45%;
+      max-width: 360px;
+      margin: .25rem 1rem 1rem 2rem;
+      // !VA NOW
+      // margin: 0 auto 2rem;
+      float: right;
+      figcaption {
+        font-size: 1.125rem;
+        text-align: center;
+      }
+      img {
+        width: 100%;
+        border: 8px solid #FFF;
+      }
+      hr {
+        display: none;
+      }
+    }
+  }
+  @include desktop {
+    display: block;
+    figure {
+      display: block;
+      width: 35%;
+      margin: .5rem 2rem 1rem;
+      float: right;
+      img {
+        width: 100%;
+        border: 8px solid #FFF;
+      }
+      figcaption {
+        padding: 0 1rem;
+        font-size: 1.188rem;
+      }
+      hr {
+        display: none;
+      }
+    }
+  }
+  @include ldesktop {
+    display: block;
+    figure {
+      display: block;
+      width: 420px;
+      margin: .5rem 3rem 2rem;
+      float: right;
+      img {
+        width: 100%;
+        border: 8px solid #FFF;
+      }
+      figcaption {
+        font-size: 1.25rem;
+        line-height: 1.588rem;
+      }
+      hr {
+        display: none;
+      }
+    }
+  }  
+  width: 100%;
+}
+
+.paw-bullet {
+  @include tablet {
+    margin-right: .5rem;
+    font-size: 1rem;
+  }
+  @include desktop {
+    margin-right: .75rem;
+  }
+  @include ldesktop {
+    margin-right: .75rem;
+  }
+}
+
+// !VA ICON PALETTE STYLES
+// =======================
+.palette {
+  @include mphone {
+    width: 340px;
+  }
+  @include lphone {
+    width: 360px;
+  }
+  @include tablet {
+    flex-direction: row;
+    width: 460px;
+    margin: 0 auto;
+    padding: 0;
+
+  }
+  @include desktop {
+    flex-direction: row;
+    width: 460px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  @include ldesktop {
+    flex-direction: row;
+    width: 460px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+// !VA DONATE PALETTE
+.palette_donate {
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    .palette--left { 
+      width: 55%;
+      padding: 0 2rem;
+    }
+    .palette--right {
+      width: 45%;
+    }
+  }
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    .palette--left { 
+      width: 55%;
+      padding: 0 2rem;
+    }
+    .palette--right {
+      width: 45%;
+    }
+  }
+  @include ldesktop {
+    flex-direction: row;
+    justify-content: space-between;
+    .palette--left { 
+      width: 55%;
+      padding: 0 2rem;
+    }
+    .palette--right {
+      width: 45%;
+    }
+  }
+}
+
+
+
+
+
+// !VA MODAL STYLES
+// ================
+
+
+
+
+
+
+.modal-icon-block {
+  @include mphone {
+    display: flex;
+  }
+  @include lphone {
+    display: flex;
+  }
+  @include tablet {
+    display: flex;
+  }
+  @include desktop {
+    display: none;
+  }
+  @include ldesktop {
+    display: none;
+  }
+}
+
+.palette_block {
+  @include mphone {
+    display: none;
+  }
+  @include lphone {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: flex;
+    // width: 100%;
+    margin: 0 auto;
+  }
+  @include ldesktop {
+    display: flex;
+    margin: 1rem;
+  }
+}
+
+
+.modal-square-icon-bg {
+  @include ldesktop {
+    width: 110px;
+    height: 110px;
+    svg {
+      font-size: 4.5rem;
+    }
+    p {
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 1.25rem;
+    }
+  }
+}
+
+
+
+
+// !VA ELEMENT STYLES
+// ==================
+
+
+// !VA HEADER STYLES
+// =================
+.header {
+  @include mphone {
+    height: 87px;
+  }
+  @include lphone {
+    height: 102px;
+  }
+  @include tablet {
+    height: 108px;
+  }
+  @include desktop {
+    height: 118px;
+  }
+  @include ldesktop {
+    height: 136px;
+  }
+}
+
+.header_content {
+  @include mphone {
+    height: 5.438rem;
+    padding: .25rem .5rem .313rem;
+  }
+  @include lphone {
+    height: 6.5rem;
+    padding: .25rem .5rem .313rem;
+  }
+  @include tablet {
+    height: 108px;
+    padding: .25rem .5rem .313rem;
+  }
+  @include desktop {
+    height: 118px;
+    padding: .25rem .5rem .313rem;
+  }
+  @include ldesktop {
+    height: 136px;
+    padding: .25rem 5rem .313rem 3rem;
+  }
+}
+
+.header-spacer {
+  @include mphone {
+    height: 120px;
+  }
+  @include lphone {
+    height: 136px;
+  }
+  @include tablet {
+    height: 140px;
+  }
+  @include desktop {
+    height: 180px;
+  }
+  @include ldesktop {
+    height: 210px;
+  }
+}
+
+// !VA NAV STYLES
+// !VA See ./scss/nav.scss
+
+// !VA BRANDING STYLES
+// ===================
+
+.branding {
+  // @include mphone {
+  // width: 280px;
+  // }
+  // @include lphone {
+  // width: 300px;
+  // }
+  @include tablet {
+    // width: 330px;
+    padding-left: 1rem;
+  }
+  // @include desktop {
+  // width: 380px;
+  // }
+  // @include ldesktop {
+  // width: 420px;
+  // }
+}
+
+.branding_head--logo-img {
+  @include mphone {
+    width: 5.5rem;
+    padding-top: .25rem;
+  }
+  @include lphone {
+    width: 6.5rem;
+    padding-top: .313rem;
+  }
+  @include tablet {
+    width: 6.875rem;
+    padding: .313rem 0 0;
+  }
+  @include desktop {
+    width: 7.5rem;
+    margin: .313rem 0 0 .5rem;
+  }
+  @include ldesktop {
+    width: 8rem;
+    margin: .625rem 0 0 2rem;
+  }
+}
+
+
+// !VA SECTION STYLES
+// ==================
+
+section {
+  @include mphone {
+    // !VA For .landing, gutter is set in two-column-content because of the two-tone color scheme
+    &.landing {
+      background: var(--primary_color);
+      .section_content {
+        padding-bottom: .5rem;
+        background: var(--primary_color);
+        .two-column-content {
+          display: block;
+          margin: 0 auto;
+          padding: 0 .75rem 2rem;
+          width: 365px;
+          background: var(--primary_bg_color);
+        }
+      }
+    }
+  }
+  @include lphone {
+    &.landing {
+      background: var(--primary_color);
+      .section_content {
+        padding-bottom: .5rem;
+        background: var(--primary_color);
+        .two-column-content {
+          display: block;
+          // !VA NOW
+          // width: 394px;
+          // width: 100%;
+          width: calc(100vw - 20px);
+          margin: 0 auto;
+          padding: 0 1rem 2rem;
+          background: var(--primary_bg_color);
+        }
+      }
+    }
+  }
+  @include tablet {
+    // !VA NOW
+    &.landing {
+      background: var(--primary_color);
+      .section_content {
+        background: var(--primary_color);
+        padding-bottom: .75rem;
+        .two-column-content {
+          display: block;
+          // !VA NOW
+          // width: 100%;
+          width: calc(100vw - 20px);
+          margin: 0 auto;
+          padding: 0 2rem 3rem;
+          background: var(--primary_bg_color);
+        }
+      }
+    }
+  }
+  @include desktop {
+    &.landing {
+      background: var(--primary_color);
+      .section_content {
+        background: var(--primary_color);
+        padding-bottom: 1rem;
+        .two-column-content {
+          display: block;
+          // !VA NOW
+          // width: 100%;
+          width: calc(100vw - 20px);
+          margin: 0 auto;
+          padding: 0 3rem 3rem;
+          background: var(--primary_bg_color);
+        }
+      }
+    }
+  }
+
+  @include ldesktop {
+    // !VA NOW
+    &.landing {
+      background: var(--primary_color);
+      .section_content {
+        padding-bottom: 1rem;
+        background: var(--primary_color);
+        width: 1400px;
+        .two-column-content {
+          display: block;
+          width: 100%;
+          margin: 0 auto;
+          padding: 0 5.688rem 3rem;
+          background: var(--primary_bg_color);
+        }
+      }
+    }
+  }
+}
+
+
+.section_heading--head {
+  h1 {
+    @include mphone {
+      padding: .75rem 0;
+      font-size: 1.313rem;
+      line-height: 1.625rem;
+    }
+    @include lphone {
+      padding: .75rem 0;
+      font-size: 1.313rem;
+      line-height: 1.625rem;
+    }
+    @include tablet {
+      padding: 1rem 0;
+      font-size: 1.488rem;
+      line-height: 1.75rem;
+    }
+    @include desktop {
+      padding: 1rem 0;
+      font-size: 1.5rem;
+      line-height: 1.75rem;
+    }
+    @include ldesktop {
+      padding: 1.25rem 0;
+      font-size: 1.88rem;
+      line-height: 2rem;
+    }
+  }
+}
+
+
+.section_heading--subhead-content {
+  @include mphone {
+    padding: .75rem 0 0;
+    h2 {
+      padding: .25rem 0 .188rem;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
+  }
+  @include lphone {
+    padding: .75rem 0 0;
+    h2 {
+      padding: .25rem 0 .188rem;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
+  }
+  @include tablet {
+    padding: .75rem 0 .25rem;
+    h2 {
+      padding: 0 0 .25rem;
+      font-size: 1.313rem;
+    }
+  }
+  @include desktop {
+    padding: .75rem 0 .25rem;
+    h2 {
+      padding: 0 0 .5rem;
+      font-size: 1.413rem;
+    }
+  }
+  @include ldesktop {
+    padding: 1rem 0;
+    h2 {
+      padding: 1rem 0;
+      font-size: 1.75rem;
+      line-height: 2rem;
+    }
+  }
+}
+
+
+.section_heading--text {
+  @include mphone {
+    font-size: 1.313rem;
+  }
+  @include lphone {
+    font-size: 1.375rem;
+  }
+  @include tablet {
+    font-size: 1.375rem;
+  }
+  @include desktop {
+    font-size: 1.625rem;
+  }
+  @include ldesktop {
+    font-size: 1.75rem;
+  }
+}
+
+.section_heading--rule {
+  @include mphone {
+    margin-top: .125rem;
+  }
+  @include lphone {
+    margin-top: .188rem;
+  }
+  @include tablet {
+    margin-top: .188rem;
+  }
+  @include desktop {
+    margin-top: .375rem;
+  }
+  @include ldesktop {
+    margin-top: .438rem;
+  }
+}
+
+.section_content {
+  @include mphone {
+    // !VA Gutter on everything BUT .landing
+    padding: 0 1rem .5rem;
+  }
+  @include lphone {
+    // !VA Gutter on everything BUT .landing
+    padding: 0 1.25rem .5rem;
+  }
+  @include tablet {
+    // !VA Gutter on everything BUT .landing
+    padding: 0 2rem .5rem;
+  }
+  @include desktop {
+    // !VA Gutter on everything BUT .landing
+    padding: 0 2rem .5rem;
+  }
+  @include ldesktop {
+    width: 1200px;
+    margin: 0 auto;
+    // padding: 2rem 0 1.25rem;
+  }
+}
+
+.section_content--video {
+  @include mphone {
+    iframe {
+      width: 350px;
+      height: 197px;
+    }
+  }
+  @include lphone {
+    iframe {
+      width: 384px;
+      height: 216px;
+    }
+  }
+  @include tablet {
+    iframe {
+      width: 425px;
+      height: 239px;
+      margin: .5rem auto 1.5rem;
+    }
+  }
+  @include desktop {
+    iframe {
+      width: 425px;
+      height: 239px;
+      margin: 1rem auto 2rem;
+    }
+  }
+  @include ldesktop {
+    iframe {
+      width: 600px;
+      height: 338px;
+      margin: 1rem auto 2rem;
+    }
+  }
+}
+
+
+
+.section_content--heading-content {
+  @include ldesktop {
+    margin: .5rem 2rem .75rem 0;
+    h2 {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  } 
+}
+
+
+.section_content-subhead h2 {
+  @include mphone {
+    margin: .5rem 0 .25rem;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+  @include lphone {
+    margin: .5rem 0 .25rem;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+  @include tablet {
+    margin: .5rem 0 .25rem;
+    font-size: 1.188rem;
+    line-height: 1.5rem;
+  }
+  @include desktop {
+    margin: 1rem 0 .5rem;
+    font-size: 1.313rem;
+  }
+  @include ldesktop {
+    margin: 1rem 0 .5rem;
+    font-size: 1.5rem;
+  }
+}
+
+.section_content--list {
+  @include mphone {
+    margin-top: .5rem;
+  }
+  @include lphone {
+    margin-top: .5rem;
+  }
+  @include tablet {
+    margin-top: 0;
+  }
+  @include ldesktop {
+    padding-bottom: .5rem;
+  }
+}
+
+.section_content--text,  .section_content--list-item {
+  @include mphone {
+    // padding: 0 .5rem;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+  @include lphone {
+    // padding: 0 .5rem;
+    font-size: 1.125rem;
+    line-height: 1.625rem;;
+  }
+  @include tablet {
+    // padding: 0 1rem .75rem;
+    padding: 0 0 .75rem;
+    font-size: 1.188rem;
+    line-height: 1.688rem;
+  }
+  @include desktop {
+    padding: 0 0 1rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  @include ldesktop {
+    padding: 0 0 .813rem;
+    font-size: 1.388em;
+    line-height: 2rem;
+  }
+}
+
+.section_content--list-item-svg {
+  @include mphone {
+    padding: 0 1rem .5rem 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    text-indent: -1.375rem;
+    svg {
+      margin-right: .5rem;
+      font-size: .813rem;
+    }
+  }
+  @include lphone {
+    padding: 0 1rem .5rem 1.75rem;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    text-indent: -1.375rem;
+    svg {
+      margin-right: .5rem;
+      font-size: .813rem;
+    }
+  }
+  @include tablet {
+    padding: 0 1rem .5rem 2rem;
+    font-size: 1.188rem;
+    line-height: 1.688rem;
+    text-indent: -1.375rem;
+    svg {
+      margin-right: .5rem;
+      font-size: .813rem;
+    }
+  }
+  @include desktop {
+    padding: 0 1rem .5rem 2rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-indent: -1.375rem;
+    svg {
+      margin-right: .5rem;
+      font-size: .813rem;
+    }
+  }
+  @include ldesktop {
+    padding: 0 1rem .5rem 2.5rem;
+    font-size: 1.313em;
+    line-height: 1.938rem;
+    text-indent: -1.375rem;
+    svg {
+      margin-right: .5rem;
+      font-size: .813rem;
+    }
+  }
+  // padding: 0 1rem .25rem;
+}
+
+.section_content--icon-palette {
+  margin-bottom: 2rem;
+}
+
+
+// !VA LANDING STYLES
+// ==================
+
+// .landing_container {
+// }
+
+.landing--marquee {
+  @include mphone {
+    height: 1.75rem;
+    margin-bottom: .5rem;
+    h2 {
+      width: 1750px;
+      padding-top: .063rem;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
+  }
+  @include lphone {
+    height: 2.625rem;
+    h2 {
+      width: 1900px;
+      padding-top: .25rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+  @include tablet {
+    height: 2.625rem;
+    h2 {
+      width: 1900px;
+      padding-top: .25rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+  @include desktop {
+    h2 {
+      width: 2100px;
+      padding-top: .25rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+  @include ldesktop {
+    h2 {
+      width: 2200px;
+      padding: .125rem 0 .25rem;
+      font-size: 1.75rem;
+      line-height: 2.25rem;
+    }
+  }
+}
+
+@include mphone {
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(395px);
+    }
+    100% {
+      // transform: translateX(calc(-1770px));
+      transform: translateX(-1750px);
+    }
+  }
+}
+
+@include lphone {
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(430px);
+    }
+    100% {
+      // transform: translateX(calc(-1770px));
+      transform: translateX(-1900px);
+    }
+  }
+}
+@include tablet {
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(810px);
+    }
+    100% {
+      // transform: translateX(calc(-1770px));
+      transform: translateX(-2200px);
+    }
+  }
+}
+@include desktop {
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(960px);
+    }
+    100% {
+      // transform: translateX(calc(-1770px));
+      transform: translateX(-2200px);
+    }
+  }
+}
+@include ldesktop {
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(1960px);
+    }
+    100% {
+      // transform: translateX(calc(-1770px));
+      transform: translateX(-2700px);
+    }
+  }
+}
+
+.landing_content {
+  @include mphone {
+    width: 365px;
+  }
+  @include lphone {
+    width: 400px;
+    margin-top: .125rem;
+  }
+  @include tablet {
+    width: 728px;
+    margin: .5rem 1rem;
+  }
+  @include desktop {
+    width: 1000px;
+    margin: .5rem 1rem;
+  }
+  @include ldesktop {
+    width: 1400px;
+    margin: 1rem 0;
+  }
+}
+
+.landing_content--heading {
+  @include mphone {
+    padding: 1rem 0 .313rem;
+    font-size: 1.188rem;
+    line-height: 1.625rem; 
+  }
+  @include lphone {
+    padding: 1rem 0 .313rem;
+    font-size: 1.188rem;
+    line-height: 1.625rem;
+  }
+  @include tablet {
+    padding: 1rem 0 .25rem;
+    font-size: 1.313rem;
+    line-height: 2rem;
+  }
+  @include desktop {
+    font-size: 1.313rem;
+    line-height: 1.75rem;
+  }
+  @include ldesktop {
+    padding: .675rem 0 .25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.landing_content--figure {
+  @include mphone {
+    figcaption {
+      padding: .25rem 0 .25rem .5rem !important;
+      font-size: 1.063rem !important;
+      line-height: 1.5rem !important;
+    }
+  }
+  @include lphone {
+    figcaption {
+      padding: .25rem 0 .25rem .5rem !important;
+      font-size: 1.063rem !important;
+      line-height: 1.5rem !important;
+    }
+  }
+  @include tablet {
+    figcaption {
+      padding: .25rem 0 .25rem .5rem !important;
+      font-size: 1.125rem !important;
+      line-height: 1.625rem !important;
+    }
+  }
+  @include desktop {
+    figcaption {
+      padding: .25rem 0 .25rem .5rem !important;
+      font-size: 1.125rem !important;
+      line-height: 1.625rem !important;
+    }
+  }
+  @include ldesktop {
+    figcaption {
+      padding: .25rem 0 .25rem .5rem !important;
+      font-size: 1.125rem !important;
+      line-height: 1.625rem !important;
+    }
+  }
+}
+
+.landing_content--text {
+  @include mphone {
+    padding: .25rem 0;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  @include lphone {
+    padding: .25rem 0;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  @include tablet {
+    padding: .25rem 0;
+    font-size: 1.188rem;
+    line-height: 1.75rem;
+  }
+  @include desktop {
+    padding: .25rem 0;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+  @include ldesktop {
+    padding: .25rem 0;
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 2.125rem;
+  }
+}
+
+.landing_content--list-item {
+  @include mphone {
+    padding: .25rem 0;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  @include lphone {
+    padding: .25rem 0;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  @include tablet {
+    padding: .25rem 0;
+    font-size: 1.188rem;
+    line-height: 1.75rem;
+  }
+  @include desktop {
+    padding: .25rem 0;
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  @include ldesktop {
+    padding: .25rem 0;
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 2.125rem;
+  }
+}
+
+
+.landing_content--list-item-svg {
+  @include mphone {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  @include lphone {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  @include tablet {
+    padding: 0 1rem .5rem 1.5rem;
+    font-size: 1.188rem;
+    line-height: 1.75rem;
+    text-indent: -1.375rem;
+    svg {
+      margin-right: .5rem;
+      font-size: .813rem;
+    }
+  }
+  @include desktop {
+    padding: 0 1rem .5rem 1.5rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    text-indent: -1.375rem;
+    svg {
+      margin-right: .5rem;
+      font-size: 1rem;
+    }
+  }
+  @include ldesktop {
+    padding: 0 1rem .5rem 1.5rem;
+    font-size: 1.313em;
+    line-height: 1.938rem;
+    text-indent: -1.375rem;
+    svg {
+      margin-right: .5rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+
+
+
+
+
+
+.landing_hero {
+  // @include tablet {
+  //   width: 100%;
+  // }
+  // @include desktop {
+  //   width: 100%;
+  // }
+  @include ldesktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.landing_hero--content {
+  @include mphone {
+    padding-bottom: .5rem;
+  }
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  @include desktop {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  @include ldesktop {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 3rem 2rem 0;
+  }
+}
+
+.landing_hero--content-head {
+  @include mphone {
+    padding: .625rem 0;
+    h2 {
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 3rem;
+      .font-massive {
+        font-size: 4.5rem;
+        font-weight: 600;
+        line-height: 4.5rem;
+      }
+    }
+    h4 {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+  }
+  @include lphone {
+    h2 {
+      // padding: .625rem 0;
+      font-size: 3.5rem;
+      font-weight: 400;
+      line-height: 4rem;
+      .font-massive {
+        display: block;
+        padding: .5rem 0 1rem;
+        font-size: 4.5rem;
+        font-weight: 600;
+        font-size: 5.5rem;
+      }
+    }
+    h4 {
+      font-size: 2rem;
+      line-height: 2rem;
+      
+    }
+  }
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: .5rem 0 1rem;
+    h2 {
+      font-size: 4rem;
+      font-weight: 400;
+      line-height: 4rem;
+      .font-massive {
+        display: block;
+        padding: 1rem 0;
+        font-size: 5.5rem;
+        font-weight: 600;
+      }
+    }
+    h4 {
+      font-size: 3.063rem;
+      line-height: 3.063rem;
+    }
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: .5rem 0 1rem;
+    h2 {
+      font-size: 5rem;
+      font-weight: 400;
+      line-height: 5rem;
+      // background: rgba(255, 0, 0, .3) !important; //devred
+      .font-massive {
+        display: block;
+        padding: 0;
+        font-size: 9rem;
+        line-height: 9rem;
+        font-weight: 600;
+      }
+    }
+    h4 {
+      font-size: 3.5rem;
+      line-height: 3.5rem;
+    }
+  }
+  @include ldesktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+    padding: .5rem 0 1rem;
+    h2 {
+      font-size: 6rem;
+      font-weight: 400;
+      line-height: 6rem;
+      .font-massive {
+        display: block;
+        padding: .25rem 0 .5rem;
+        font-size: 10rem;
+        line-height: 10rem;
+        font-weight: 600;
+      }
+    }
+    h4 {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+.landing_hero--content-video {
+  @include mphone {
+    width: 375px;
+    // height: 205px;
+    height: auto;
+    iframe {
+      width: 368px;
+      height: 207px;
+    }
+  }
+  @include lphone {
+    width: 414px;
+    iframe {
+      width: 406px;
+      height: 228px;
+    }
+  }
+  @include tablet {
+    width: 500px;
+    min-width: auto;
+    height: auto;
+    border: 8px solid #FFF;
+    iframe {
+      width: 486px;
+      height: 273px;
+    }
+  }
+  @include desktop {
+    width: 600px;
+    border: 8px solid #FFF;
+    margin-bottom: 1rem;
+    iframe {
+      width: 586px;
+      height: 330px;
+    }
+  }
+  @include ldesktop {
+    width: 540px;
+    border: 8px solid #FFF;
+    iframe {
+      width: 526px;
+      height: 304px;
+    }
+  }
+}
+
+.landing_hero--content-video-sharebar {
+  @include tablet {
+    width: 80%;
+    height: 2.813rem;
+    // padding: 1rem 0;
+    svg {
+      color: var(--primary-color);
+      font-size: 2.25rem;
+    }
+  }
+  @include desktop {
+    width: 80%;
+    height: 2.813rem;
+    // padding: 1rem 0;
+    svg {
+      color: var(--primary-color);
+      font-size: 2.25rem;
+    }
+  }
+}
+
+.landing--cta {
+  @include mphone {
+    width: 100%;
+    margin-top: .75rem;
+    padding: .5rem 1rem;
+  }
+}
+
+.landing--cta-button {
+  @include mphone {
+    font-size: 1.313rem;
+    line-height: 2rem;
+  }
+  @include lphone {
+    padding: 1rem 0;
+    font-size: 1.625rem;
+    line-height: 2.125rem;
+  }
+}
+
+// !VA STENT STYLES
+// ================
+
+.menu-spacer {
+  @include mphone {
+    margin-top: -29px;
+    padding-top: 25px;
+  }
+  @include lphone {
+    margin-top: -29px;
+    padding-top: 25px;
+  }
+  @include tablet {
+    margin-top: -34px;
+    padding-top: 29px;
+  }
+  @include desktop {
+    margin-top: -39px;
+    padding-top: 34px;
+  }
+  @include ldesktop {
+    margin-top: -39px;
+    padding-top: 34px;
+  }
+}
+
+.section_menu {
+  @include mphone {
+    // !VA NOW
+    // margin: 0 0 .5rem;
+    width: 375px;
+  }
+  @include lphone {
+    width: 414px;
+    width: 100%;
+    // !VA NOW
+    // margin: 0 0 .5rem;
+  }
+  @include tablet {
+    display: flex;
+    width: 100%;
+    // !VA NOW
+    // margin: 0 0 .75rem;
+    // padding: .188rem 0 0;
+  } 
+  @include desktop {
+    display: flex;
+    width: 100%;
+    padding: 0 0 0;
+  }
+  @include ldesktop {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 0;
+    // margin: 1rem 0 2rem;
+  }
+}
+
+.section_menu_inline {
+  @include ldesktop {
+    margin: 1rem 0 1.5rem;
+  }
+}
+
+.section_menu--list {
+  @include tablet {
+    justify-content: space-around;
+  }
+  @include desktop {
+    width: 800px;
+  }
+  @include ldesktop {
+    width: 900px;
+  }
+}
+
+.section_menu--list-item h4 {
+  @include mphone {
+    font-size: .938rem;
+    .mobile-hide {
+      display: none;
+    }
+  }
+  @include lphone {
+    font-size: 1rem;
+    .mobile-hide {
+      display: none;
+    }
+  }
+  @include tablet {
+    font-size: 1.188rem;
+    .mobile-hide {
+      display: inline;
+    }
+  }
+  @include desktop {
+    font-size: 1.188em;
+    .mobile-hide {
+      display: inline;
+    }
+  }
+  @include ldesktop {
+    font-size: 1.25rem;
+    .mobile-hide {
+      display: inline;
+    }
+  }
+}
+
+.section_content-heading {
+  @include mphone {
+    margin-top: .5rem;
+    h2 {
+      font-size: 1.375rem;
+    }
+  }
+  @include lphone {
+    margin-top: .75rem;
+    h2 {
+      font-size: 1.438rem;
+    }
+  }
+  @include tablet {
+    margin: .75rem 0;
+    h2 {
+      font-size: 1.438rem;
+    }
+  }
+  @include desktop {
+    margin: .75rem 0 1rem;
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  @include ldesktop {
+    margin: .75rem 0 2rem;
+    h2 {
+      font-size: 1.625rem;
+      line-height: 2.75rem;
+    }
+  }  
+}
+
+
+.section_pagenav--list {
+    @include ldesktop {
+    justify-content: space-around;
+    color: white;
+    font-family: var(--secondary_font);
+    font-size: 1.25rem;
+    svg {
+      font-size: 1.625rem;
+      vertical-align: -5px;
+    }
+  }
+
+}
+
+
+// !VA ACCORDION STYLES
+// =====================
+
+.accordion__container {
+  @include mphone {
+    width: 100%;
+    padding: 0 .5rem .5rem;
+  }
+  @include lphone {
+    width: 100%;
+    padding: 0 .5rem .25rem;
+  }
+  @include tablet {
+    width: 100%;
+    padding: 0 0 .25rem;
+  }
+  @include desktop {
+    width: 100%;
+    padding: 0 0 .25rem;
+  }
+  @include ldesktop {
+    width: 100%;
+    padding: 0 0 .25rem;
+  } 
+}
+
+.accordion__title-text {
+  @include lphone {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+  @include tablet {
+    font-size: 1.25rem;
+    line-height: 1.688rem;
+  }
+  @include desktop {
+    font-size: 1.25rem;
+    line-height: 1.688rem;
+  }
+  @include ldesktop {
+    font-size: 1.313rem;
+  }
+}
+
+.accordion__icon {
+  @include tablet {
+    margin: .413rem 0 0 .5rem;
+    svg {
+      margin: 0 .5rem;
+      font-size: 1.125rem;
+    }
+  }
+  @include desktop {
+    margin: .313rem 0 0 .5rem;
+    svg {
+      margin: 0 .5rem;
+      font-size: 1.25rem;
+    }
+  }
+  @include ldesktop {
+    margin: .413rem 0 0 .5rem;
+    svg {
+      margin: 0 .5rem;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.accordion__content {
+  @include mphone {
+    margin: 0;  
+    padding: .5rem  1.175rem .75rem .5rem;
+  }
+  @include lphone {
+    margin: 0;  
+    padding: .5rem  1.175rem .75rem .5rem;
+  }
+  @include tablet {
+    padding: .5rem 1rem .75rem 1.5rem;  
+  }
+  @include desktop {
+    padding: .5rem 1.688rem .75rem;  
+  }
+  @include ldesktop {
+    padding: .5rem 1.688rem .75rem;  
+  }
+}
+
+.accordion__list-item, .accordion__text {
+  @include lphone {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+  @include tablet {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+  @include desktop {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+  @include ldesktop {
+    padding: .25rem 3rem .25rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+.accordion__list-item {
+  @include tablet {
+    padding: .25rem .5rem .25rem 2.5rem;
+    text-indent: -1.313rem;
+  }
+  @include desktop {
+    padding: .25rem .5rem .25rem 3rem;
+    text-indent: -1.75rem;
+  }
+  @include ldesktop {
+    padding: .25rem 2rem .25rem 3rem;
+    text-indent: -1.75rem;
+  }
+}
+
+.separator_rule {
+  @include ldesktop {
+    height: 1rem;
+  }
+}
+
+// !VA FOOTER STYLES
+// !VA =============
+
+footer {
+  @include mphone {
+    padding: .75rem 0 3rem;
+  }
+  @include lphone {
+    padding: .75rem 0 3rem;
+  }
+  @include tablet {
+    padding: 0;
+  }
+  @include desktop {
+    padding: 0;
+  }
+  @include ldesktop {
+    // display: flex;
+    // justify-content: space-between;
+    padding: 0;
+  }
+}
+
+.footer_content {
+  @include mphone {
+    padding: 1rem 1rem .5rem;
+    figure {
+      margin: .5rem 0 .75rem 1rem;
+    }
+  }
+  @include lphone {
+    padding: 1rem 1.25rem .5rem;
+    figure {
+      width: 45%;
+      margin: .5rem 0 .75rem 1rem;
+    }
+  }
+  @include tablet {
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 2rem .5rem;
+    figure {
+      max-width: 200px;
+      margin: .5rem 0 .75rem 1.5rem;
+      img {
+        border: 5px solid #FFF;
+      }
+    }
+  }
+  @include desktop {
+    // width: 960px;
+    margin: 0 auto;
+    padding: 1rem 2rem .5rem;
+    figure {
+      max-width: 200px;
+      margin: .5rem 0 .75rem 1.5rem;
+      img {
+        border: 5px solid #FFF;
+      }
+    }
+  }
+  @include ldesktop {
+    width: 1200px;
+    padding: 0;
+    margin: 0 auto; 
+    padding: 2rem  0 1.25rem;
+    .two-column-content {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 0 1rem;
+      background: var(--primary_bg_color);
+    }
+    figure {
+      max-width: 260px;
+      margin: .5rem 2rem .75rem 2rem;
+      img {
+        border: 5px solid #FFF;
+      }
+      figcaption {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.footer_heading-head-content {
+  @include ldesktop {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.footer_heading--subhead-content {
+  @include tablet {
+    h2 {
+      padding: .25rem 0 .5rem;
+      font-size: 1.313rem;
+      line-height: 1.75rem;
+    }
+  }
+  @include desktop {
+    h2 {
+      padding: .25rem 0 .5rem;
+      font-size: 1.313rem;
+      line-height: 1.75rem;
+    }
+  }
+  @include ldesktop {
+    h2 {
+      padding: .25rem 0 .5rem;
+      font-size: 1.313rem;
+      line-height: 1.75rem;
+    }
+  }
+}
+
+.footer_content--disclaimer-header {
+  @include tablet {
+    font-size: 1.063rem;
+  }
+  @include desktop {
+    font-size: 1.125rem;
+  }
+  @include ldesktop {
+    padding-bottom: 1rem;
+    font-size: 1.125rem;
+  }
+}
+
+.footer_content--disclaimer {
+  @include tablet {
+    font-size: 1rem;
+  }
+  @include desktop {
+    font-size: 1.063rem;
+  }
+  @include ldesktop {
+    padding: 0 2rem;
+    font-size: 1.125rem;
+  }
+}
+
+.footer_content--disclaimer {
+  font-family: var(--primary_font);
+  // color: #FFF;
+  font-size: .938rem;
+}
+
+
+
+.footer_content--head-text {
+  @include tablet {
+    font-size: 1.313rem;
+    line-height: 1.75rem;
+  }
+  @include desktop {
+    font-size: 1.375rem;
+    line-height: 2rem;
+  }
+  @include ldesktop {
+    font-size: 1.413rem;
+    line-height: 2.25rem;
+  }
+}
+
+.footer_content--text  {
+  @include mphone {
+    padding: 0 0 .75rem;
+  }
+  @include lphone {
+    padding: 0 0 .75rem;
+  }
+  @include tablet {
+    font-size: 1.063rem;
+    line-height: 1.625rem;
+  }
+  @include desktop {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+  @include ldesktop {
+    padding: 0 0 .813rem;
+    font-size: 1.313em;
+    line-height: 1.75rem;
+    font-size: 1.188rem;
+  }
+}
+
+.footer_content--separator {
+  @include ldesktop {
+    width: 100%;
+    height: 1px;
+    margin: 1.5rem 0 2rem;
+    hr {
+      height: 1px;
+      display: block;
+      margin: 0 auto;
+      width: 90%;
+      border-width: 0;
+      background-color: #555555;
+      // border: 1px solid #959595;
+    }
+  }
+}
+
+
+
+.contact_form {
+  @include mphone {
+    width: 315px;
+  }
+  @include lphone {
+    width: 354px;
+  }
+  @include tablet {
+    width: 588px;
+  }
+  @include desktop {
+    width: 600px;
+  }
+  @include ldesktop {
+    width: 700px;
+  }
+}
+
+.contact-form--title {
+  @include mphone {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    h2 { font-size: 1.5rem; }
+    .horiz-rule-above { padding-bottom: .5rem; }
+    .horiz-rule-below { padding-top: .5rem; }
+  }
+  @include lphone {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    h2 { font-size: 1.625rem; }
+    .horiz-rule-above { padding-bottom: .5rem; }
+    .horiz-rule-below { padding-top: .5rem; }
+  }
+  @include tablet {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    h2 { font-size: 2.5rem; }
+    .horiz-rule-above { padding-bottom: 1rem; }
+    .horiz-rule-below { padding-top: 1rem; }
+  }
+  @include desktop {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    h2 { 
+      font-size: 2.75rem; 
+      letter-spacing: .1rem;
+    }
+    .horiz-rule-above { padding-bottom: 1rem; }
+    .horiz-rule-below { padding-top: 1rem; }
+  }
+  @include ldesktop {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    h2 { 
+      font-size: 3rem; 
+      letter-spacing: .1rem;
+    }
+    .horiz-rule-above { padding-bottom: 1.25rem; }
+    .horiz-rule-below { padding-top: 1.25rem; }
+  }
+}
+
+
+.contact-form--feedback {
+  @include mphone {
+    height: 120px;
+    p { font-size: 1.125rem; }
+  }
+  @include lphone {
+    height: 140px;
+    p { 
+      font-size: 1.25rem; 
+      line-height: 1.865rem;
+    }
+  }
+  @include tablet {
+    height: 160px;
+    p { 
+      font-size: 1.5rem; 
+      line-height: 2.25rem;
+    }
+  }
+  @include desktop {
+    height: 160px;
+    p { 
+      font-size: 1.625rem; 
+      line-height: 2.5rem;
+    }
+  }
+  @include ldesktop {
+    height: 120px;
+    p { font-size: 1.625rem; }
+    line-height: 2.5rem;
+  }
+}
+
+.contact-form--input {
+  @include mphone {
+    height: 380px;
+    padding: 1rem 0;
+    input {
+      margin-top: .125rem;
+      padding: 10px;
+      font-size: 1rem;
+    }
+    textarea {
+      padding: 30px;
+    }
+    button {
+      width: 140px;
+    }
+  }
+  @include lphone {
+    height: 500px;
+    padding: 1rem 0;
+    input {
+      margin-top: .125rem;
+      padding: 10px;
+      font-size: 1rem;
+    }
+    textarea {
+      padding: 80px;
+    }
+    button {
+      width: 140px;
+    }
+  }
+  @include tablet {
+    height: 600px;
+    padding: 1rem 0;
+    input {
+      margin-top: .125rem;
+      padding: 20px;
+      font-size: 1rem;
+    }
+    textarea {
+      padding: 100px;
+    }
+    button {
+      width: 180px;
+      font-size: 1.25rem;
+    }
+  }
+  @include desktop {
+    height: 600px;
+    padding: 1rem 0;
+    input {
+      margin-top: .125rem;
+      margin-bottom: 1rem;
+      padding: 10px;
+      font-size: 1rem;
+    }
+    textarea {
+      padding: 100px;
+    }
+    button {
+      width: 180px;
+      font-size: 1.25rem;
+    }
+  }
+  @include ldesktop {
+    height: 600px;
+    padding: 1rem 0;
+    input {
+      margin-top: .125rem;
+      margin-bottom: 1rem;
+      padding: 10px;
+      font-size: 1rem;
+    }
+    textarea {
+      padding: 100px;
+    }
+    button {
+      width: 180px;
+      font-size: 1.25rem;
+    }
+  }
+}
